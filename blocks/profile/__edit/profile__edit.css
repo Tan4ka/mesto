@@ -8,6 +8,12 @@
     margin-left: 18px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+
+.profile__edit:hover {
+    opacity: 0.6;
 }
 
 @media screen and (max-width: 767px) {
@@ -15,5 +21,6 @@
         width: 18px;
         height: 18px;
         margin-left: 10px;
+        margin-bottom: 0;
     }
 }

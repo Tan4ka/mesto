@@ -3,5 +3,18 @@
     width: 22px;
     height: 19px;
     flex-shrink: 0;
+    border: none;
+    background-color: white;
+    cursor: pointer;
 
+}
+
+.elements__like:hover {
+    opacity: 0.5;
+
+}
+
+.elements__like:active {
+    opacity: 1;
+    background-image: url(../../../images/union.svg);
 }

@@ -8,87 +8,84 @@
     <link rel="stylesheet" href="./pages/index.css">
 </head>
 
-<body>
-    <div class="page">
-        <header class="header">
-            <a href="./images/logo.svg" class="header__logo"></a>
-        </header>
-        <section class="profile">
-            <img class="profile__avatar" src="./images/image.jpg" alt="Жак-Ив Кусто" />
-            <div class="profile__info">
-                <div class="profile__text">
-                    <div class="profile__name">
-                        <h1 class="profile__title">Жак-Ив&nbsp;Кусто</h1>
+<body class="page">
+    <header class="header">
+        <a href="./images/logo.svg" class="header__logo"></a>
+    </header>
+    <section class="profile">
+        <img class="profile__avatar" src="./images/image.jpg" alt="Жак-Ив Кусто" />
+        <div class="profile__info">
+            <div class="profile__name">
+                <h1 class="profile__title">Жак-Ив&nbsp;Кусто</h1>
+                <button type="button" class="profile__edit">
+                    <img src="./images/pen.svg" alt="Редактировать" />
+                </button>
+            </div>
+            <p class="profile__subtitle">Исследователь океана</p>
+        </div>
+        <button type="button" class="profile__add"></button>
+    </section>
+    <section class="elements">
+        <div class="elements__card">
+            <img class="elements__photo" src="./images/tenerife.jpg" alt="Тенерифе. Вулкан Тейде" />
+            <div class="elements__place">
+                <h2 class="elements__text">Тенерифе</h2>
+                <button type="button" class="elements__like"></button>
+            </div>
+        </div>
+        <div class="elements__card">
+            <img class="elements__photo" src="./images/fuerteventura.jpg"
+                alt="Фуэртевентура. Лавовые камни на берегу" />
+            <div class="elements__place">
+                <h2 class="elements__text">Фуэртевентура</h2>
+                <button type="button" class="elements__like"></button>
+            </div>
+        </div>
+        <div class="elements__card">
+            <img class="elements__photo" src="./images/gran-canaria.jpg" alt="Гран Канария. Вид на горы" />
+            <div class="elements__place">
+                <h2 class="elements__text">Гран Канария</h2>
+                <button type="button" class="elements__like"></button>
+            </div>
+        </div>
+        <div class="elements__card">
+            <img class="elements__photo" src="./images/lanzarote.jpg" alt="Лансароте. Парк кактусов" />
+            <div class="elements__place">
+                <h2 class="elements__text">Лансароте</h2>
+                <button type="button" class="elements__like"></button>
+            </div>
+        </div>
+        <div class="elements__card">
+            <img class="elements__photo" src="./images/la-palma.jpg" alt="Пальма. Вид на скалистый берег" />
+            <div class="elements__place">
+                <h2 class="elements__text">Пальма</h2>
+                <button type="button" class="elements__like"></button>
+            </div>
+        </div>
+        <div class="elements__card">
+            <img class="elements__photo" src="./images/la-gomera.jpg" alt="Гомера. Скалы в тумане" />
+            <div class="elements__place">
+                <h2 class="elements__text">Гомера</h2>
+                <button type="button" class="elements__like"></button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer__copyright">© 2020 Mesto Russia</p>
+    </footer>
 
-                        <button class="profile__edit">
-                            <img src="./images/pen.svg" alt="Редактировать" />
-                        </button>
-                    </div>
-                    <p class="profile__subtitle">Исследователь океана</p>
-                </div>
-            </div>
-            <button class="profile__add"></button>
-        </section>
-        <section class="elements">
-            <div class="elements__card">
-                <img class="elements__photo" src="./images/tenerife.jpg" alt="Тенерифе" />
-                <div class="elements__place">
-                    <p class="elements__text">Тенерифе</p>
-                    <a href="#" class="elements__like"></a>
-                </div>
-            </div>
-            <div class="elements__card">
-                <img class="elements__photo" src="./images/fuerteventura.jpg" alt="Фуэртевентура" />
-                <div class="elements__place">
-                    <p class="elements__text">Фуэртевентура</p>
-                    <a href="#" class="elements__like"></a>
-                </div>
-            </div>
-            <div class="elements__card">
-                <img class="elements__photo" src="./images/gran-canaria.jpg" alt="Гран Канария" />
-                <div class="elements__place">
-                    <p class="elements__text">Гран Канария</p>
-                    <a href="#" class="elements__like"></a>
-                </div>
-            </div>
-            <div class="elements__card">
-                <img class="elements__photo" src="./images/lanzarote.jpg" alt="Лансароте" />
-                <div class="elements__place">
-                    <p class="elements__text">Лансароте</p>
-                    <a href="#" class="elements__like"></a>
-                </div>
-            </div>
-            <div class="elements__card">
-                <img class="elements__photo" src="./images/la-palma.jpg" alt="Пальма" />
-                <div class="elements__place">
-                    <p class="elements__text">Пальма</p>
-                    <a href="#" class="elements__like"></a>
-                </div>
-            </div>
-            <div class="elements__card">
-                <img class="elements__photo" src="./images/la-gomera.jpg" alt="Гомера" />
-                <div class="elements__place">
-                    <p class="elements__text">Гомера</p>
-                    <a href="#" class="elements__like"></a>
-                </div>
-            </div>
-        </section>
-        <footer class="footer">
-            <p class="footer__copyright">© 2020 Mesto Russia</p>
-        </footer>
-    </div>
     <div class="popup">
         <div class="popup__container">
-            <button class="popup__close"></button>
+            <button type="button" class="popup__close"></button>
             <h2 class="popup__title">Редактировать профиль</h2>
-            <form class="popup__form">
-                <input class="popup__form-name">
-                <input class="popup__form-job">
-                <button class="popup__submit">Сохранить</button>
+            <form class="popup__form" name="form">
+                <input class="popup__form_input popup__form_input-name" type="text" name="name">
+                <input class="popup__form_input popup__form_input-job" type="text" name="job">
+                <button type="submit" class="popup__submit">Сохранить</button>
             </form>
         </div>
-    </div>
-    <script src="./script.js"></script>
+        </div>
+        <script src="./scripts/index.js"></script>
 </body>
 
 </html>

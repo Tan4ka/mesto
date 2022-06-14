@@ -1,9 +1,13 @@
-.profile__name{
+.profile__name {
     display: flex;
     align-items: flex-end;
+    margin-top: 22px;
+    height: 39px;
 }
+
 @media screen and (max-width: 767px) {
     .profile__name {
         padding-left: 28px;
+        align-items: center;
     }
 }

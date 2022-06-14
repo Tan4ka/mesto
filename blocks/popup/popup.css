@@ -9,7 +9,3 @@
     align-items: center;
     background-color: #00000080;
 }
-
-.popup-opened {
-    display: flex;
-}
