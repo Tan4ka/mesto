@@ -25,14 +25,18 @@
         </div>
         <button type="button" class="profile__add"></button>
     </section>
+    <!-- <template id="elements__template"> -->
+        
     <section class="elements">
-        <div class="elements__card">
-            <img class="elements__photo" src="./images/tenerife.jpg" alt="Тенерифе. Вулкан Тейде" />
+           <!-- <div class="elements__card"> -->
+            
+            <!-- <img class="elements__photo" src="./images/tenerife.jpg" alt="Тенерифе. Вулкан Тейде" />
+            <button type="button" class="elements__delete"></button>
             <div class="elements__place">
                 <h2 class="elements__text">Тенерифе</h2>
                 <button type="button" class="elements__like"></button>
             </div>
-        </div>
+        </div>  
         <div class="elements__card">
             <img class="elements__photo" src="./images/fuerteventura.jpg"
                 alt="Фуэртевентура. Лавовые камни на берегу" />
@@ -67,24 +71,46 @@
             <div class="elements__place">
                 <h2 class="elements__text">Гомера</h2>
                 <button type="button" class="elements__like"></button>
-            </div>
-        </div>
+            </div> -->
+        <!-- </div>  -->
     </section>
     <footer class="footer">
         <p class="footer__copyright">© 2020 Mesto Russia</p>
     </footer>
 
-    <div class="popup">
+     <div class="popup">
         <div class="popup__container">
             <button type="button" class="popup__close"></button>
             <h2 class="popup__title">Редактировать профиль</h2>
-            <form class="popup__form" name="form">
+            <form class="popup__form" id="edit_form" name="form">
                 <input class="popup__form-input popup__form-input_type_name" type="text" name="name">
                 <input class="popup__form-input popup__form-input_type_job" type="text" name="job">
                 <button type="submit" class="popup__submit">Сохранить</button>
             </form>
         </div>
     </div>
+
+    <div class="popup" id="add_place">
+        <div class="popup__container">
+            <button type="button" class="popup__close"></button>
+            <h2 class="popup__title">Новое место</h2>
+            <form class="popup__form" id="add_form" name="form">
+                <input class="popup__form-input popup__form-input_type_place" placeholder="Название" type="text" name="place">
+                <input class="popup__form-input popup__form-input_type_link" placeholder="Ссылка на картинку" type="text" name="link">
+                <button type="submit" class="popup__submit">Сохранить</button>
+            </form>
+        </div>
+    </div> 
+
+    <div class="popup" id="popup_photo">
+        <div class="popup__photo-container">
+            <button type="button" class="popup__close"></button>
+            <img class="popup__photo" src="./images/tenerife.jpg"/>
+            <p class="popup__caption-name"></p>
+            
+        </div>
+    </div>
+
     <script src="./scripts/index.js"></script>
 </body>
 
