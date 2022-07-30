@@ -20,8 +20,6 @@ let btnPhotoContainerClose = photoContainer.querySelector('.popup__close');
 let imgPhoto = document.querySelector('.popup__photo');
 let captionName = document.querySelector('.popup__caption-name');
 
-
-
 const initialCards = [
     {
         name: 'Гомера',
