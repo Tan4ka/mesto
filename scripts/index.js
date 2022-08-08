@@ -35,15 +35,15 @@ function createCard(element) {
     cardImage.alt = element.alt
     cardImage.addEventListener('click', function () {
         popupPhotoViewImage.setAttribute('src', element.link);
+        popupPhotoViewImage.setAttribute('alt', element.alt);
         popupPhotoViewCaption.textContent = element.name;
         popupPhotoView.classList.add('popup_opened');
 
     })
 
-    cardElement.querySelector('.elements__text').appendChild(document.createTextNode(element.name));
+    cardElement.querySelector('.elements__text').textContent = element.name;
 
     cardElement.querySelector('.elements__delete').addEventListener('click', function (evt) {
-        evt.stopPropagation();
         cardElement.remove();
     });
 
@@ -107,8 +107,7 @@ function placeFormSubmitHandler(evt) {
     })
     renderCard(card)
     closePopup(popupAddPlace)
-    addPlaceFormPlaceInput.value = '';
-    addPlaceFormLinkInput.value = '';
+    popupFormAddPlace.reset()
 
 }
 popupFormAddPlace.addEventListener('submit', placeFormSubmitHandler);
@@ -117,6 +116,3 @@ popupFormAddPlace.addEventListener('submit', placeFormSubmitHandler);
 btnPopupPhotoViewClose.addEventListener('click', function () {
     closePopup(popupPhotoView)
 })
-
-
-
